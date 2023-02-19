@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #2981d9;
+}
+
+.todo{
+   
+    max-width:500px;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.todo__title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form{
+    width: 100%;
+    position: relative;
+
+  
+}
+
+.form__field{
+    width: 100%;
+    height: 60px;
+    background: white;
+    outline: none;
+
+    border: none;
+    border-radius: 5px;
+    padding: 0 50px;
+    font-size: 22px;
+}
+
+.form__icon{
+    position: absolute;
+    font-size: 25px;
+    top: 12px;
+    left: 10px;
+    
+}
+
+.form__btn{
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    background: none;
+    display: none;
+    
+}
+
+.form__btn span{
+    font-size: 22px;
+} 
+
+.form__btn span::before{
+    margin: 0;
+}
+
+.content__top{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid grey;
+
+}
+
+.content__icon{
+    font-size: 23px;
+}
+
+.content__list-item{
+    background: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+
+}
+
+input:not(:placeholder-shown) + .form__btn{
+    display: block;
+}
+
+.icon-spin4{
+    position: absolute;
+    font-size: 20px;
+    top: 17px;
+    right: 7px;
+    animation: rotate 1.3s ease-in-out ;
+}
+
+.form__spinner{
+    display: none;
+}
+
+@keyframes rotate{
+    from {
+        transform: rotate(0)
+    } to {
+        transform: rotate(720deg)
+    }
+}
+
+.content__list-item-done{
+    cursor: pointer;
+}
+.content__list-item-delete{
+    cursor: pointer;
+}
+.content__list-item-text{
+   
+    cursor: pointer;
+}
+.content__list-item-input{
+    border: none;
+    outline: none;
+    width: 350px;
+}

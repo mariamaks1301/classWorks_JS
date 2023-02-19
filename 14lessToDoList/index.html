@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/fonts/css/icon.css">
+    
+</head>
+<body>
+
+    <div class="todo">
+        <h1 class="todo__title">TODO LIST</h1>
+
+        <form action="" class="form">
+            <span class="form__icon icon-clipboard"></span>
+            <input required class="form__field" type="text" placeholder="Enter your next task">
+            <button class="form__btn" type="submit">
+                <span class="icon-plus-circled"></span>
+            </button>
+            <span class="form__spinner icon-spin4"></span>
+        </form>
+
+        <div class="content">
+            <div class="content__top">
+                <span class="content__icon icon-list-add"></span>
+                <div class="content__btns">
+                    <button class="content__btn" type="button">Important</button>
+                    <button class="content__btn" type="button">Done</button>
+                    <button class="content__btn" type="button">All</button>
+
+                </div>
+            </div>
+            <ul class="content__list">
+                
+               
+            </ul>
+        </div>
+    </div>
+    
+
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
